@@ -7,7 +7,7 @@ test('wishlist', async ({ page }) => {
   await page.locator('.glass-product-card__wishlist > div > .gl-icon__wrapper').first().click();
   await page.locator('input.gl-input__field').fill('rafaboca93@gmail.com');
   await page.locator('button[type="submit"]').click();
-  await page.locator('input[type="password"]').fill('rafa1207@');
+  await page.locator('input[type="password"]').fill('Rafa1207@');
   await page.locator('button[type="submit"]').click();
 
 });
