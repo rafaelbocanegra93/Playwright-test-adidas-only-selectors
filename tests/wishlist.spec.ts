@@ -9,5 +9,6 @@ test('wishlist', async ({ page }) => {
   await page.locator('button[type="submit"]').click();
   await page.locator('input[type="password"]').fill('Rafa1207@');
   await page.locator('button[type="submit"]').click();
-
+  await page.locator('div.close-icon-container___3fWSM').first().click();
+  await expect(page.locator('span-testid="wishlist-active"')).toBeVisible();
 });
